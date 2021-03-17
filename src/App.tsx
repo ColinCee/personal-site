@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import { Layout } from "antd";
 import styled from "styled-components";
 import Header from "./components/Header";
 import Home from "./components/Home";
