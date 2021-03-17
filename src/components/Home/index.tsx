@@ -5,6 +5,8 @@ import styled from "styled-components";
 const StyledContent = styled(Content)`
   margin-left: 2em;
   height: 100%;
+  max-width: 1440px;
+  margin: 5em auto;
 `;
 const Home = () => {
   return (

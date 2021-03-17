@@ -6,9 +6,6 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 
 const Container = styled.div`
-  display: grid;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-columns: 1fr;
   height: 100vh;
 `;
 function App() {
