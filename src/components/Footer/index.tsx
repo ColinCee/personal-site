@@ -1,12 +1,17 @@
 import React from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
+import HorizontalMargin from "../Layout/HorizontalMargin";
 
 const StyledFooter = styled(Layout.Footer)`
   width: 100%;
 `;
 const Header = () => {
-  return <StyledFooter>Ant Design ©2018 Created by Ant UED</StyledFooter>;
+  return (
+    <StyledFooter>
+      <HorizontalMargin>©2021 Created by Colin Cheung</HorizontalMargin>
+    </StyledFooter>
+  );
 };
 
 export default Header;

@@ -1,18 +1,19 @@
 import { Content } from "antd/lib/layout/layout";
 import React from "react";
 import styled from "styled-components";
+import HorizontalMargin from "../Layout/HorizontalMargin";
 
 const StyledContent = styled(Content)`
-  margin-left: 2em;
-  height: 100%;
-  max-width: 1440px;
-  margin: 5em auto;
+  margin-top: 2em;
+  height: 90vh;
 `;
 const Home = () => {
   return (
-    <StyledContent>
-      <div className="site-layout-content">Content</div>
-    </StyledContent>
+    <HorizontalMargin>
+      <StyledContent>
+        <div className="site-layout-content">Content</div>
+      </StyledContent>
+    </HorizontalMargin>
   );
 };
 
