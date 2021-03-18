@@ -18,12 +18,12 @@ const Container = styled(HorizontalMargin)`
 
 const TitleText = styled(Text)`
   font-size: 68px;
-  margin-top: 0.5em;
+  margin-top: 0.75em;
 `;
 
 const SubtitleText = styled(Text)`
   font-size: 16px;
-  margin-top: 0.5em;
+  margin-top: 2em;
 `;
 
 const Banner = () => {

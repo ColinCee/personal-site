@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import Text from "antd/lib/typography/Text";
 
 const StyledText = styled(Text)`
-  font-size: 16px;
+  font-size: 24px;
 `;
 export default () => {
   const [currentTime, setCurrentTime] = useState(dayjs());
