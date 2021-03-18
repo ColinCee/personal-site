@@ -1,8 +1,7 @@
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
-import { Space } from "antd";
 import React from "react";
 import styled from "styled-components";
-import CurrentTime from "./CurrentTime";
+import Statistic from "./Statistic";
 
 const Container = styled.div`
   display: grid;
@@ -18,7 +17,7 @@ export default () => {
     <Container>
       <GithubOutlined />
       <LinkedinOutlined />
-      <CurrentTime />
+      <Statistic />
     </Container>
   );
 };
