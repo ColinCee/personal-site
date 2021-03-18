@@ -13,7 +13,6 @@ function App() {
     <Container>
       <Header />
       <Home />
-      <Footer />
     </Container>
   );
 }
