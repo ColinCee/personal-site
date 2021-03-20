@@ -1,5 +1,5 @@
 import React from "react";
 
 export default () => {
-  return <div>hello</div>;
+  return <div>Page Visits: 256</div>;
 };

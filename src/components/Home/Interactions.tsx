@@ -7,17 +7,19 @@ const Container = styled.div`
   display: grid;
   grid-auto-flow: column;
   grid-gap: 1em;
-  align-items: center;
-  margin-top: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
   font-size: 36px;
 `;
 
 export default () => {
   return (
-    <Container>
-      <GithubOutlined />
-      <LinkedinOutlined />
+    <>
+      <Container>
+        <GithubOutlined />
+        <LinkedinOutlined />
+      </Container>
       <Statistic />
-    </Container>
+    </>
   );
 };
