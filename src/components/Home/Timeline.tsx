@@ -1,15 +1,15 @@
 import { Content } from "antd/lib/layout/layout";
 import React from "react";
 import styled from "styled-components";
+import HorizontalMargin from "../Layout/HorizontalMargin";
 
-const StyledContent = styled(Content)`
-  margin-top: 2em;
+const Container = styled(HorizontalMargin)`
+  z-index: 2;
+  position: relative;
+  padding-top: 2em;
   height: 90vh;
+  background-color: #fff;
 `;
 export default () => {
-  return (
-    <StyledContent>
-      <div className="site-layout-content">Content</div>
-    </StyledContent>
-  );
+  return <Container />;
 };

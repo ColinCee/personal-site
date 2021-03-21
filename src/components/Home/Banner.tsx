@@ -1,6 +1,7 @@
 import Text from "antd/lib/typography/Text";
 import React from "react";
 import styled from "styled-components";
+import Circle from "./Shapes/Circle";
 import HorizontalMargin from "../Layout/HorizontalMargin";
 import Interactions from "./Interactions";
 
@@ -14,6 +15,7 @@ const Container = styled(HorizontalMargin)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 `;
 
 const TitleText = styled(Text)`
@@ -30,6 +32,7 @@ const Banner = () => {
   return (
     <Background>
       <Container>
+        <Circle />
         <TitleText>Colin Cheung</TitleText>
         <SubtitleText>
           Software Engineer, Machine Learning Enthusiast, Backseat Gamer
