@@ -25,8 +25,8 @@ jobs:
         run: |
           cd src
           mv secret.json.template secret.json
-          sed -i -e "s/<KEY>/$KEY/g" secret.json
-          sed -i -e "s/<APIURL>/$APIURL/g" secret.json
+          sed -i -e "s|<KEY>|$KEY|g" secret.json
+          sed -i -e "s|<APIURL>|$APIURL|g" secret.json
       - name: Lint
         run: npm run lint
       - name: Build
