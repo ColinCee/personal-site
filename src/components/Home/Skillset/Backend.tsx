@@ -6,8 +6,8 @@ import { ReactComponent as NodeJS } from "devicon/icons/nodejs/nodejs-original.s
 import { ReactComponent as Redis } from "devicon/icons/redis/redis-original.svg";
 import { ReactComponent as MongoDB } from "devicon/icons/mongodb/mongodb-original.svg";
 import { ReactComponent as Postgres } from "devicon/icons/postgresql/postgresql-original.svg";
-import Text from "antd/lib/typography/Text";
 import Title from "antd/lib/typography/Title";
+import Logo from "./Logo";
 
 const Container = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ export default () => {
     <Container>
       <Title level={2}>Backend</Title>
       <IconContainer>
-        <Java />
+        <Logo icon={<Java />} tooltipText="Java" />
         <Python />
         <NodeJS />
         <Redis />
