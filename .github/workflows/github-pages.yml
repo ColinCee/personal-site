@@ -20,6 +20,15 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
+      - name: Sub secrets
+        env:
+          KEY: ${{ secrets.KEY }}
+          APIURL: ${{ secrets.APIURL }}
+        run: |
+          cd src
+          mv secret.json.template secret.json
+          sed -i "/s/<KEY>/$KEY" secret.json
+          sed -i "/s/<APIURL>/$APIURL" secret.json
       - name: Build
         run: npm run build
       - name: Deploy 🚀
