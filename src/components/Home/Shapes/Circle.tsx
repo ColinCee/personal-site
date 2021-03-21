@@ -12,7 +12,7 @@ const OrbitPath = styled.div`
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
-  border: 1px solid #ded;
+  border: 1px solid #f0f0f0;
   z-index: 1;
   animation: ${Rotation} 30s ease-in-out infinite;
 `;
@@ -25,7 +25,7 @@ const Circle = styled.div`
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #eaeaea;
+  background-color: #b7e3fa;
 `;
 
 const CircleOne = styled(Circle)`

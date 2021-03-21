@@ -1,13 +1,12 @@
 import Text from "antd/lib/typography/Text";
 import React from "react";
 import styled from "styled-components";
-import Circle from "./Shapes/Circle";
 import HorizontalMargin from "../Layout/HorizontalMargin";
 import Interactions from "./Interactions";
 
 const Background = styled.div`
   background-color: #f6f6f6;
-  height: 440px;
+  height: 27rem;
   width: 100vw;
 `;
 
@@ -25,14 +24,13 @@ const TitleText = styled(Text)`
 
 const SubtitleText = styled(Text)`
   font-size: 16px;
-  margin-top: 2em;
+  margin-top: 1em;
 `;
 
 const Banner = () => {
   return (
     <Background>
       <Container>
-        <Circle />
         <TitleText>Colin Cheung</TitleText>
         <SubtitleText>
           Software Engineer, Machine Learning Enthusiast, Backseat Gamer
