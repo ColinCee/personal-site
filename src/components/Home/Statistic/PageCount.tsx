@@ -28,6 +28,7 @@ export default () => {
         });
         setVisits(data.count);
       } catch (error) {
+        /* eslint-disable no-console */
         console.error(
           "Whoops, looks like the visitor tracking server is down :("
         );
