@@ -1,6 +1,7 @@
 @import '~antd/dist/antd.css';
 @import "@fontsource/roboto";
+@import "@fontsource/roboto/300.css";
 
 * {
-    font-family: Roboto;
+    font-family: Roboto, serif;
 }

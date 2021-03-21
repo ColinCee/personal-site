@@ -9,6 +9,9 @@ const Container = styled(HorizontalMargin)`
   display: flex;
   justify-content: space-between;
   margin-top: 4em;
+  h2 {
+    font-weight: 300;
+  }
 `;
 export default () => {
   return (
