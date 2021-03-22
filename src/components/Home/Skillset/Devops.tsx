@@ -8,6 +8,7 @@ import { ReactComponent as Linux } from "devicon/icons/linux/linux-original.svg"
 import Text from "antd/lib/typography/Text";
 import Title from "antd/lib/typography/Title";
 import GithubActions from "../../../images/github_actions.png";
+import Logo from "./Logo";
 
 const Container = styled.div`
   display: flex;
@@ -31,12 +32,18 @@ export default () => {
     <Container>
       <Title level={2}>Devops</Title>
       <IconContainer>
-        <Docker />
-        <img src={GithubActions} alt="Github Actions Logo" />
-        <AWS />
-        <Git />
-        <Kubernetes />
-        <Linux />
+        <Logo icon={<Docker />} tooltipText="Docker" />
+        <Logo
+          icon={<img src={GithubActions} alt="Github Actions Logo" />}
+          tooltipText="Github Actions"
+        />
+        <Logo
+          icon={<AWS />}
+          tooltipText="AWS (Lambda, API Gateway, SQS, SNS, S3, ECR, Elasticache)"
+        />
+        <Logo icon={<Git />} tooltipText="Git" />
+        <Logo icon={<Kubernetes />} tooltipText="Kubernetes" />
+        <Logo icon={<Linux />} tooltipText="Linux" />
       </IconContainer>
     </Container>
   );

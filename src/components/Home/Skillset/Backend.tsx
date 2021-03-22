@@ -32,11 +32,11 @@ export default () => {
       <Title level={2}>Backend</Title>
       <IconContainer>
         <Logo icon={<Java />} tooltipText="Java" />
-        <Python />
-        <NodeJS />
-        <Redis />
-        <MongoDB />
-        <Postgres />
+        <Logo icon={<Python />} tooltipText="Python" />
+        <Logo icon={<NodeJS />} tooltipText="NodeJS" />
+        <Logo icon={<Redis />} tooltipText="Redis" />
+        <Logo icon={<MongoDB />} tooltipText="MongoDB" />
+        <Logo icon={<Postgres />} tooltipText="Postgres" />
       </IconContainer>
     </Container>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { Tooltip } from "antd";
 
 type Props = {
-  icon: JSX.Element;
+  icon: JSX.Element | string;
   tooltipText: string;
 };
 export default ({ icon, tooltipText }: Props) => {

@@ -8,6 +8,7 @@ import { ReactComponent as Javascript } from "devicon/icons/javascript/javascrip
 import { ReactComponent as Typescript } from "devicon/icons/typescript/typescript-original.svg";
 import Text from "antd/lib/typography/Text";
 import Title from "antd/lib/typography/Title";
+import Logo from "./Logo";
 
 const Container = styled.div`
   display: flex;
@@ -31,12 +32,12 @@ export default () => {
     <Container>
       <Title level={2}>Frontend</Title>
       <IconContainer>
-        <ReactLogo />
-        <Redux />
-        <Electron />
-        <Webpack />
-        <Javascript />
-        <Typescript />
+        <Logo icon={<ReactLogo />} tooltipText="React" />
+        <Logo icon={<Redux />} tooltipText="Redux" />
+        <Logo icon={<Electron />} tooltipText="Electron" />
+        <Logo icon={<Webpack />} tooltipText="Webpack" />
+        <Logo icon={<Javascript />} tooltipText="Javascript" />
+        <Logo icon={<Typescript />} tooltipText="Typescript" />
       </IconContainer>
     </Container>
   );
