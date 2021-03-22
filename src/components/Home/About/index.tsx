@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Color from "../../styling/Color";
 import { FlexColCenter } from "../../styling/layout/FlexContainer";
-import HorizontalMargin from "../../styling/layout/HorizontalMargin";
 import BackgroundText from "./BackgroundText";
 import Intro from "./Intro";
 import Skillset from "./Skillset";

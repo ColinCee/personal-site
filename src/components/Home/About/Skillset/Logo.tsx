@@ -1,6 +1,5 @@
-import React, { ComponentType } from "react";
+import React from "react";
 import { Tooltip } from "antd";
-import styled from "styled-components";
 
 type SVGProps = {
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;

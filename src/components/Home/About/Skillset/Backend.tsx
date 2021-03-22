@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { ReactComponent as Java } from "devicon/icons/java/java-original.svg";
 import { ReactComponent as Python } from "devicon/icons/python/python-original.svg";
 import { ReactComponent as NodeJS } from "devicon/icons/nodejs/nodejs-original.svg";

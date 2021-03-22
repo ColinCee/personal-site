@@ -1,10 +1,7 @@
 import React from "react";
 import Text from "antd/lib/typography/Text";
 import styled from "styled-components";
-import FlexContainer, {
-  FlexColCenter,
-} from "../../styling/layout/FlexContainer";
-import Color from "../../styling/Color";
+import { FlexColCenter } from "../../styling/layout/FlexContainer";
 import Blockquote from "../../styling/typography/Blockquote";
 
 const Container = styled(FlexColCenter)`
