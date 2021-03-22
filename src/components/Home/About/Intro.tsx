@@ -6,7 +6,7 @@ import { FlexCol, FlexRowCenter } from "../../styling/layout/FlexContainer";
 import ProfilePic from "../../../images/linkedin_pic.jpg";
 
 const Container = styled(FlexRowCenter)`
-  margin-top: 3em;
+  margin-top: 2rem;
 `;
 const CirclarImage = styled.img`
   border-radius: 50%;

@@ -6,7 +6,10 @@ import Interactions from "./Interactions";
 
 const Background = styled.div`
   background-color: #f6f6f6;
-  height: 27rem;
+  height: 35rem;
+  @media (min-width: 450px) {
+    height: 27rem;
+  }
   width: 100vw;
 `;
 
@@ -14,12 +17,11 @@ const Container = styled(HorizontalMargin)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  padding: 2rem;
 `;
 
 const TitleText = styled(Text)`
   font-size: 68px;
-  margin-top: 0.75em;
 `;
 
 const SubtitleText = styled(Text)`
