@@ -1,28 +1,42 @@
 import React from "react";
 import { Layout, Menu } from "antd";
 import styled from "styled-components";
+import { FormOutlined, HomeOutlined } from "@ant-design/icons";
+import HorizontalMargin from "../styling/layout/HorizontalMargin";
 
 const StyledHeader = styled(Layout.Header)`
   position: "fixed";
   z-index: 1;
   width: 100%;
+  color: #b7e3fa;
 `;
 
-const Container = styled.div`
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+const MenuItem = styled(Menu.Item)`
+  && {
+    color: #b7e3fa;
+    font-size: 16px;
+  }
 `;
+
 const Header = () => {
   return (
     <StyledHeader>
-      <Container>
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
+      <HorizontalMargin>
+        <Menu theme="dark" mode="horizontal">
+          <MenuItem
+            key="1"
+            icon={<HomeOutlined style={{ fontSize: "16px" }} />}
+          >
+            Home
+          </MenuItem>
+          <MenuItem
+            key="2"
+            icon={<FormOutlined style={{ fontSize: "16px" }} />}
+          >
+            Blog
+          </MenuItem>
         </Menu>
-      </Container>
+      </HorizontalMargin>
     </StyledHeader>
   );
 };
