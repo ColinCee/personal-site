@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import HorizontalMargin from "../Layout/HorizontalMargin";
+import HorizontalMargin from "../styling/layout/HorizontalMargin";
 
 const Container = styled(HorizontalMargin)`
   z-index: 2;

@@ -8,35 +8,19 @@ import { ReactComponent as MongoDB } from "devicon/icons/mongodb/mongodb-origina
 import { ReactComponent as Postgres } from "devicon/icons/postgresql/postgresql-original.svg";
 import Title from "antd/lib/typography/Title";
 import Logo from "./Logo";
+import { Container, IconContainer } from "./Layout";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: calc(5 * 4em);
-`;
-const IconContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 4em);
-  gap: 2em;
-  margin-top: 1em;
-  * {
-    width: 4em;
-    height: 4em;
-  }
-`;
 export default () => {
   return (
     <Container>
-      <Title level={2}>Backend</Title>
+      <Title level={3}>Backend</Title>
       <IconContainer>
-        <Logo icon={<Java />} tooltipText="Java" />
-        <Logo icon={<Python />} tooltipText="Python" />
-        <Logo icon={<NodeJS />} tooltipText="NodeJS" />
-        <Logo icon={<Redis />} tooltipText="Redis" />
-        <Logo icon={<MongoDB />} tooltipText="MongoDB" />
-        <Logo icon={<Postgres />} tooltipText="Postgres" />
+        <Logo Icon={Java} tooltipText="Java" />
+        <Logo Icon={Python} tooltipText="Python" />
+        <Logo Icon={NodeJS} tooltipText="NodeJS" />
+        <Logo Icon={Redis} tooltipText="Redis" />
+        <Logo Icon={MongoDB} tooltipText="MongoDB" />
+        <Logo Icon={Postgres} tooltipText="Postgres" />
       </IconContainer>
     </Container>
   );

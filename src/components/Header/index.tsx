@@ -2,7 +2,7 @@ import React from "react";
 import { Layout, Menu } from "antd";
 import styled from "styled-components";
 import { FormOutlined, HomeOutlined } from "@ant-design/icons";
-import HorizontalMargin from "../Layout/HorizontalMargin";
+import HorizontalMargin from "../styling/layout/HorizontalMargin";
 
 const StyledHeader = styled(Layout.Header)`
   position: "fixed";

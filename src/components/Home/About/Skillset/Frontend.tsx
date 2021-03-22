@@ -9,35 +9,19 @@ import { ReactComponent as Typescript } from "devicon/icons/typescript/typescrip
 import Text from "antd/lib/typography/Text";
 import Title from "antd/lib/typography/Title";
 import Logo from "./Logo";
+import { Container, IconContainer } from "./Layout";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(4.5 * 4em);
-`;
-
-const IconContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 4em);
-  gap: 2em;
-  margin-top: 1em;
-  * {
-    width: 4em;
-    height: 4em;
-  }
-`;
 export default () => {
   return (
     <Container>
-      <Title level={2}>Frontend</Title>
+      <Title level={3}>Frontend</Title>
       <IconContainer>
-        <Logo icon={<ReactLogo />} tooltipText="React" />
-        <Logo icon={<Redux />} tooltipText="Redux" />
-        <Logo icon={<Electron />} tooltipText="Electron" />
-        <Logo icon={<Webpack />} tooltipText="Webpack" />
-        <Logo icon={<Javascript />} tooltipText="Javascript" />
-        <Logo icon={<Typescript />} tooltipText="Typescript" />
+        <Logo Icon={ReactLogo} tooltipText="React" />
+        <Logo Icon={Redux} tooltipText="Redux" />
+        <Logo Icon={Electron} tooltipText="Electron" />
+        <Logo Icon={Webpack} tooltipText="Webpack" />
+        <Logo Icon={Javascript} tooltipText="Javascript" />
+        <Logo Icon={Typescript} tooltipText="Typescript" />
       </IconContainer>
     </Container>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
-import HorizontalMargin from "../Layout/HorizontalMargin";
+import HorizontalMargin from "../styling/layout/HorizontalMargin";
 
 const StyledFooter = styled(Layout.Footer)`
   width: 100%;

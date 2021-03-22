@@ -1,7 +1,7 @@
 import Text from "antd/lib/typography/Text";
 import React from "react";
 import styled from "styled-components";
-import HorizontalMargin from "../Layout/HorizontalMargin";
+import HorizontalMargin from "../styling/layout/HorizontalMargin";
 import Interactions from "./Interactions";
 
 const Background = styled.div`
