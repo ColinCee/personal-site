@@ -25,6 +25,9 @@ export default () => {
             time: currentTime,
             hash,
           },
+          headers: {
+            Authorization: secret.token,
+          },
         });
         setVisits(data.count);
       } catch (error) {
