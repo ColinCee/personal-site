@@ -1,4 +1,5 @@
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
+import { Button } from "antd";
 import React from "react";
 import styled from "styled-components";
 import Statistic from "./Statistic";
@@ -6,18 +7,31 @@ import Statistic from "./Statistic";
 const Container = styled.div`
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 1em;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-size: 36px;
+  grid-gap: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
 `;
 
+const StyledButton = styled(Button)`
+  && {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+`;
 export default () => {
   return (
     <>
       <Container>
-        <GithubOutlined />
-        <LinkedinOutlined />
+        <StyledButton
+          href="https://github.com/ColinCee/"
+          icon={<GithubOutlined style={{ fontSize: "2rem" }} />}
+          size="large"
+        />
+        <StyledButton
+          href="https://www.linkedin.com/in/colin-cheung/"
+          icon={<LinkedinOutlined style={{ fontSize: "2rem" }} />}
+          size="large"
+        />
       </Container>
       <Statistic />
     </>
