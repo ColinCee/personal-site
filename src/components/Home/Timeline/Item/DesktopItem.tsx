@@ -17,7 +17,7 @@ type Props = {
 const Container = styled.div`
   max-width: 60rem;
   display: grid;
-  grid-template-columns: 14rem auto minmax(20rem, 1fr);
+  grid-template-columns: minmax(8rem, 16rem) auto minmax(20rem, 1fr);
 `;
 
 const Label = styled(Title)`
@@ -51,7 +51,7 @@ const StyledTitle = styled.span`
 export default ({ label, company, title, description }: Props) => {
   return (
     <Container>
-      <Label level={4}>{label}</Label>
+      <Label level={3}>{label}</Label>
       <TimelineBar />
       <Description>
         <FlexContainer>

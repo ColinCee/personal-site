@@ -50,11 +50,11 @@ export default ({ label, company, title, description }: Props) => {
     <Container>
       <TimelineBar />
       <Description>
-        <Label level={4}>{label}</Label>
+        <StyledCompany level={3}>
+          {company} /<StyledTitle>{title}</StyledTitle>
+        </StyledCompany>
         <FlexContainer>
-          <StyledCompany level={3}>
-            {company} /<StyledTitle>{title}</StyledTitle>
-          </StyledCompany>
+          <Label level={4}>{label}</Label>
         </FlexContainer>
         <Text>{description}</Text>
       </Description>
