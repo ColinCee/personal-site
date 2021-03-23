@@ -19,6 +19,7 @@ jobs:
         run: |
           cd src
           envsubst < secret.json.template > secret.json
+          cat secret.json
       - name: Lint
         run: npm run lint
       - name: Build
