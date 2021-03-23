@@ -18,9 +18,7 @@ jobs:
           APIURL: ${{ secrets.APIURL }}
         run: |
           cd src
-          mv secret.json.template secret.json
-          envsubst < secret.json
-          cat secret.json
+          envsubst < secret.json.template > secret.json
       - name: Lint
         run: npm run lint
       - name: Build
