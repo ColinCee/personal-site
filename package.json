@@ -6,6 +6,9 @@
   "dependencies": {
     "@ant-design/icons": "^4.5.0",
     "@fontsource/roboto": "^4.2.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "antd": "^4.14.0",
     "axios": "^0.21.1",
     "crypto-js": "^4.0.0",

@@ -10,7 +10,6 @@ const Background = styled.div`
   @media (min-width: 450px) {
     height: 27rem;
   }
-  width: 100vw;
 `;
 
 const Container = styled(HorizontalMargin)`
