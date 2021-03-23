@@ -14,6 +14,7 @@ jobs:
         run: npm ci
       - name: Sub secrets
         env:
+          TOKEN: ${{ secrets.TOKEN }}
           KEY: ${{ secrets.KEY }}
           APIURL: ${{ secrets.APIURL }}
         run: |
