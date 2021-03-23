@@ -26,7 +26,7 @@ export default () => {
       </Text>
       <Blockquote>
         Keep It Simple Stupid
-        <span>Some guy</span>
+        <span>- Some guy</span>
       </Blockquote>
     </Container>
   );

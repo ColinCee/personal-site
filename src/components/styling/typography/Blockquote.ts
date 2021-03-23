@@ -12,6 +12,7 @@ export default styled.blockquote`
   border-left: 8px solid ${Color.ACCENT_900};
   line-height: 1.6;
   position: relative;
+
   span {
     display: block;
     color: #333333;
