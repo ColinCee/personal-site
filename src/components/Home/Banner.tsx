@@ -1,11 +1,12 @@
 import Text from "antd/lib/typography/Text";
 import React from "react";
 import styled from "styled-components";
+import Color from "../styling/Color";
 import HorizontalMargin from "../styling/layout/HorizontalMargin";
 import Interactions from "./Interactions";
 
 const Background = styled.div`
-  background-color: #f6f6f6;
+  background-color: ${Color.NEUTRAL_400};
   height: 35rem;
   @media (min-width: 450px) {
     height: 27rem;

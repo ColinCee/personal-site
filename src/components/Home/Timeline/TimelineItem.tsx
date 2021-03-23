@@ -3,11 +3,13 @@ import Text from "antd/lib/typography/Text";
 import styled from "styled-components";
 
 import Title from "antd/lib/typography/Title";
-import { FlexCol, FlexRowCenter } from "../../styling/layout/FlexContainer";
+import FlexContainer, { FlexCol } from "../../styling/layout/FlexContainer";
 import TimelineBar from "./TimelineBar";
+import Color from "../../styling/Color";
 
 type Props = {
   label: string;
+  company: string;
   title: string;
   description: string;
 };
@@ -30,19 +32,30 @@ const Description = styled(FlexCol)`
   margin-block: 2rem;
 `;
 
-const StyledTitle = styled(Title)`
+const StyledCompany = styled(Title)`
   && {
     font-weight: 300;
   }
 `;
+const StyledTitle = styled(Title)`
+  &&& {
+    color: ${Color.ACCENT_400};
+    margin-top: 0;
+    margin-left: 0.5rem;
+    font-weight: 300;
+  }
+`;
 
-export default ({ label, title, description }: Props) => {
+export default ({ label, company, title, description }: Props) => {
   return (
     <Container>
       <Label level={4}>{label}</Label>
       <TimelineBar />
       <Description>
-        <StyledTitle level={3}>{title}</StyledTitle>
+        <FlexContainer>
+          <StyledCompany level={3}>{company} /</StyledCompany>
+          <StyledTitle level={3}>{title}</StyledTitle>
+        </FlexContainer>
         <Text>{description}</Text>
       </Description>
     </Container>
