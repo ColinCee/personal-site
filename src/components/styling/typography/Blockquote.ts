@@ -3,12 +3,11 @@ import Color from "../Color";
 
 export default styled.blockquote`
   font-size: 1.4em;
-  width: 60%;
-  margin: 50px auto;
+  margin-block: 4rem;
   font-family: Open Sans;
   font-style: italic;
   color: #555555;
-  padding: 1rem 2rem 1rem 5rem;
+  padding: 1rem 1rem 1rem 5rem;
   border-left: 8px solid ${Color.ACCENT_900};
   line-height: 1.6;
   position: relative;
