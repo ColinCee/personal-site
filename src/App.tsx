@@ -9,10 +9,13 @@ const Container = styled.div`
   height: 100vh;
 `;
 function App() {
-  useEffect(() => {
-    ReactGA.initialize("G-F246GL9SJW");
-    ReactGA.pageview(window.location.pathname);
-  }, []);
+  ReactGA.initialize("G-F246GL9SJW", {
+    debug: true,
+    titleCase: false,
+  });
+  ReactGA.ga("set", "checkProtocolTask", null);
+  ReactGA.pageview(window.location.pathname);
+
   return (
     <Container>
       <Header />
