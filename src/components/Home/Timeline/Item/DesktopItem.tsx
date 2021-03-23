@@ -3,9 +3,9 @@ import Text from "antd/lib/typography/Text";
 import styled from "styled-components";
 
 import Title from "antd/lib/typography/Title";
-import FlexContainer, { FlexCol } from "../../styling/layout/FlexContainer";
-import TimelineBar from "./TimelineBar";
-import Color from "../../styling/Color";
+import FlexContainer, { FlexCol } from "../../../styling/layout/FlexContainer";
+import TimelineBar from "../TimelineBar";
+import Color from "../../../styling/Color";
 
 type Props = {
   label: string;
@@ -17,11 +17,12 @@ type Props = {
 const Container = styled.div`
   max-width: 60rem;
   display: grid;
-  grid-template-columns: 12rem auto minmax(20rem, 1fr);
+  grid-template-columns: 14rem auto minmax(20rem, 1fr);
 `;
 
 const Label = styled(Title)`
-  margin-block: 2rem;
+  margin-block: 2.1rem;
+  margin-right: 2rem;
   text-align: right;
   && {
     font-weight: 300;
@@ -30,6 +31,7 @@ const Label = styled(Title)`
 
 const Description = styled(FlexCol)`
   margin-block: 2rem;
+  margin-left: 2rem;
 `;
 
 const StyledCompany = styled(Title)`

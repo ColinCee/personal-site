@@ -8,14 +8,14 @@ const Timeline = styled.div`
   position: relative;
   width: 1px;
   background-color: rgba(20, 20, 20, 0.1);
-  margin-inline: 4rem;
+  margin-inline: 1rem;
 `;
 
 const IconContainer = styled.span`
   position: absolute;
   z-index: 1;
   left: -0.6em;
-  top: 3em;
+  top: 2.5rem;
 `;
 
 export default () => {
