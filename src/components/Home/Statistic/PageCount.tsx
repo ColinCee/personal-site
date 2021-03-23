@@ -15,14 +15,14 @@ export default () => {
   useEffect(() => {
     const fetchVisitCount = async () => {
       try {
-        const currentTime = dayjs();
-        const message = secret.key + currentTime.unix();
+        const currentTime = dayjs().unix();
+        const message = secret.key + currentTime;
         const hashDigest = sha256(message);
         const hash = Base64.stringify(hashDigest);
 
         const { data } = await axios.get(secret.apiUrl, {
           params: {
-            time: currentTime.unix(),
+            time: currentTime,
             hash,
           },
         });
