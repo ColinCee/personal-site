@@ -56,7 +56,7 @@ export default () => {
       <FlexColCenter>
         {items.map(({ label, company, title, description }) => (
           <TimelineItem
-            key={title}
+            key={title + company}
             company={company}
             label={label}
             title={title}
