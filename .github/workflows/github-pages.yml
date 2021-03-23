@@ -14,13 +14,12 @@ jobs:
         run: npm ci
       - name: Sub secrets
         env:
+          TOKEN: ${{ secrets.TOKEN }}
           KEY: ${{ secrets.KEY }}
           APIURL: ${{ secrets.APIURL }}
         run: |
           cd src
-          mv secret.json.template secret.json
-          sed -i -e "s|<KEY>|$KEY|g" secret.json
-          sed -i -e "s|<APIURL>|$APIURL|g" secret.json
+          envsubst < secret.json.template > secret.json
       - name: Lint
         run: npm run lint
       - name: Build

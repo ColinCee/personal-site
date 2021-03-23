@@ -1,3 +1,4 @@
+[![Build and Deploy](https://github.com/ColinCee/personal-site/actions/workflows/github-pages.yml/badge.svg?branch=master)](https://github.com/ColinCee/personal-site/actions/workflows/github-pages.yml)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

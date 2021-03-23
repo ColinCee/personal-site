@@ -16,6 +16,9 @@ const StyledButton = styled(Button)`
   && {
     width: 2.75rem;
     height: 2.75rem;
+    border: none;
+    background: none;
+    box-shadow: none;
   }
 `;
 export default () => {

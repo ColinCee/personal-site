@@ -11,7 +11,8 @@ const Container = styled.div`
 function App() {
   useEffect(() => {
     ReactGA.initialize("G-F246GL9SJW");
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.ga("set", "checkProtocolTask", null);
+    ReactGA.pageview(window.location.pathname);
   }, []);
   return (
     <Container>

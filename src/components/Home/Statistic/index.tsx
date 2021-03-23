@@ -10,7 +10,7 @@ const Hide = keyframes`
 `;
 
 const Show = keyframes`
-  from {opacity: 0; transform: translateX(50px)}
+  from {opacity: 0; transform: translateX(8rem)}
   to {opacity: 1; transform: translateX(0px)} 
 `;
 
@@ -19,7 +19,7 @@ const Container = styled(Text)`
 `;
 const Animated = styled.span<{ show: boolean }>`
   display: ${({ show }) => (show ? "block" : "none")};
-  animation: ${({ show }) => (show ? Show : Hide)} 2s ease-in;
+  animation: ${({ show }) => (show ? Show : Hide)} 400ms ease-in;
 `;
 export default () => {
   const [toggle, setToggle] = useState(false);

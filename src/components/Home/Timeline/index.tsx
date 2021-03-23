@@ -3,8 +3,10 @@ import styled from "styled-components";
 import Title from "antd/lib/typography/Title";
 
 import Color from "../../styling/Color";
-import TimelineItem from "./TimelineItem";
 import { FlexColCenter } from "../../styling/layout/FlexContainer";
+import useWindowSize from "../../../hooks/useWindowSize";
+import DesktopItem from "./Item/DesktopItem";
+import MobileItem from "./Item/MobileItem";
 
 const Container = styled.div`
   padding: 2rem;
@@ -46,13 +48,15 @@ const items = [
   },
 ];
 export default () => {
+  const { width } = useWindowSize();
+  const TimelineItem = width < 650 ? MobileItem : DesktopItem;
   return (
     <Container>
       <StyledTitle>A Brief History</StyledTitle>
       <FlexColCenter>
         {items.map(({ label, company, title, description }) => (
           <TimelineItem
-            key={title}
+            key={title + company}
             company={company}
             label={label}
             title={title}
