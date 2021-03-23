@@ -11,7 +11,7 @@ const Container = styled.div`
 function App() {
   useEffect(() => {
     ReactGA.initialize("G-F246GL9SJW");
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname);
   }, []);
   return (
     <Container>
