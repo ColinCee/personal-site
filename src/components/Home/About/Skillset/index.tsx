@@ -8,7 +8,6 @@ import Frontend from "./Frontend";
 const Container = styled(HorizontalMargin)`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   max-width: 50rem;
   margin-top: 4em;
