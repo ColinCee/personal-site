@@ -15,7 +15,7 @@ type Props = {
 };
 
 const Container = styled.div`
-  max-width: 60rem;
+  max-width: 50rem;
   display: grid;
   grid-template-columns: minmax(8rem, 16rem) auto minmax(20rem, 1fr);
 `;

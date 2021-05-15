@@ -4,8 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1;
-  margin: 1rem;
+  flex: 1 0;
+  padding: 1rem;
 `;
 
 export const IconContainer = styled.div`
